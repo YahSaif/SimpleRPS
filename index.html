@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rock Papper Scissor Game</h1>
+    <button onclick="
+    let randomNumber = Math.random();
+    let systemInput = '';
+    if (randomNumber >= 0 && randomNumber <= 0.33) {
+        systemInput = 'Rock';
+        console.log(systemInput);
+    } else if (randomNumber >= 0.34 && randomNumber <= 0.66) {
+        systemInput = 'Paper';
+        console.log(systemInput);
+    } else {
+        systemInput = 'Scissor';
+        console.log(systemInput);
+    }
+    if (systemInput === 'Rock') {
+        alert(`Your input is Rock. Systems input is ${systemInput}.Its a tie`);
+    } else if (systemInput === 'Paper') {
+        alert(`Your input is Rock. Systems input is ${systemInput}.You lose`);
+    } else if (systemInput === 'Scissor') {
+        alert(`Your input is Rock. Systems input is ${systemInput}.You win`);
+    }
+    ">Rock</button>
+    <button onclick="
+    let randomNumber1 = Math.random();
+    let systemInput1 = '';
+    if (randomNumber1 >= 0 && randomNumber1 <= 0.33) {
+        systemInput1 = 'Rock';
+        console.log(systemInput1);
+    } else if (randomNumber1 >= 0.34 && randomNumber1 <= 0.66) {
+        systemInput1 = 'Paper';
+        console.log(systemInput1);
+    } else {
+        systemInput1 = 'Scissor';
+        console.log(systemInput1);
+    }
+    if (systemInput1 === 'Rock') {
+        alert(`Your input is Paper. Systems input is ${systemInput1}.You win`);
+    } else if (systemInput1 === 'Paper') {
+        alert(`Your input is Paper. Systems input is ${systemInput1}.Its a tie`);
+    } else if (systemInput1 === 'Scissor') {
+        alert(`Your input is Paper. Systems input is ${systemInput1}.You lose`);
+    }
+    ">Paper</button>
+    <button onclick="
+    let randomNumber2 = Math.random();
+    let systemInput2 = '';
+    if (randomNumber2 >= 0 && randomNumber2 <= 0.33) {
+        systemInput2 = 'Rock';
+        console.log(systemInput2);
+    } else if (randomNumber2 >= 0.34 && randomNumber2 <= 0.66) {
+        systemInput2 = 'Paper';
+        console.log(systemInput2);
+    } else {
+        systemInput2 = 'Scissor';
+        console.log(systemInput2);
+    }
+    if (systemInput2 === 'Rock') {
+        alert(`Your input is Scissor. Systems input is ${systemInput2}.You lose`);
+    } else if (systemInput2 === 'Paper') {
+        alert(`Your input is Scissor. Systems input is ${systemInput2}.You win`);
+    } else if (systemInput2 === 'Scissor') {
+        alert(`Your input is Scissor. Systems input is ${systemInput2}.Its a tie`);
+    }
+    ">Scissor</button>
+</body>
+</html>
